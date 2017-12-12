@@ -1,0 +1,25 @@
+// import styles from cgi.unc.edu
+@import "vars.scss";
+@import "cgi/app.scss";
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+main.container { background-color: $white}
+
+body {
+  font-family: $sans;
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+  line-height: $line-height-base;
+  // Go easy on the eyes and use something other than `#000` for text
+  color: $body-color;
+  // By default, `<body>` has no `background-color` so we set one as a best practice.
+  background-color: $bg-color;
+}
+
+* {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+// Classes

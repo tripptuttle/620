@@ -1,0 +1,83 @@
+
+.main-content .wpv-filter-form {
+
+  ul {
+    background: transparent;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 1em;
+    li {
+      padding: 0;
+      margin: 0;
+    }
+    li:nth-child(even) {
+      background: transparent;
+    }
+    label {
+      font-weight: normal;
+      font-size: .8em;
+    }
+  }
+
+  select {
+    width: 90%;
+  }
+
+  input[type='text'] {
+    @extend .text-input;
+    font-size: .8em;
+    border: 2px solid $gray !important;
+    background: white !important;
+  }
+
+  .js-wpv-reset-trigger {
+    @extend .btn;
+    font-size: .9em !important;
+  }
+
+  button {
+    font-size: .9em !important;
+  }
+
+}
+
+.psearch-control {
+  margin: .5em 0;
+}
+
+.psearch-label {
+  font-size: .7em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#advanced-filters {
+  display: none;
+  &.active {
+    display: block;
+    padding-top: 1.5em;
+  }
+}
+
+/* Search Results
+================= */
+
+.funding-search-result {
+  margin-top: 3em;
+}
+
+.funding-search-result-title {
+  margin: 0;
+}
+
+.funding-search-result-deadline {
+  font-size: .7em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: .7em 0 .5em;
+  color: $green;
+}
+
+.funding-search-result-excerpt {
+  font-size: .9em;
+}

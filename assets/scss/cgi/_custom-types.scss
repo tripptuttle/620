@@ -1,0 +1,299 @@
+// baseline styles to control custom post types across all four sites
+
+.type-custom {
+  margin-top: 1em;
+}
+
+.custom-field {
+  margin-bottom: .25em;
+  label {
+    font-size: .7em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: .25em;
+  }
+}
+
+.custom-image {
+  margin-bottom: .25em;
+}
+
+.custom-cta .btn {
+  font-size: .9em;
+  margin-top: 1em;
+}
+
+article.type-funding-opp time,
+article.type-custom time,
+article.type-global-resource time,
+article.type-gg-link time,
+article.type-gg-question time,
+article.type-global-guide-people time,
+article.type-gg-video time,
+article.type-staff time,
+article.type-award-recipient time {
+  display: none;
+}
+
+/* .funding-field-flag {
+  display: inline-block;
+  padding: .1em .5em;
+  font-weight: 600;
+  background: $gray;
+  color: #fff;
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+    background: $gray-dark;
+  }
+} */
+
+.custom-social-icons a {
+  background: $blue;
+  display: inline-block;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-right: .2em;
+}
+
+//
+// parametric search form and result styles
+//
+
+div.psearch-result {
+  border-top: 1px solid $gray-mid;
+  @include headings(1, 6) {
+    margin: .25em 0;
+    line-height: 1
+  }
+  p {
+    padding: .25em 0;
+    line-height: 1;
+    font-size: .9em;
+  }
+}
+
+div.list { // list-based results
+  margin: 0;
+  border-top: none;
+  padding: .5em;
+}
+
+div.card {
+  margin: 2em 0;
+  padding: 1em 0;
+  clear: both;
+  width: 100%;
+  display: table;
+  p {
+    font-size: .9em;
+  }
+  .card-bottom {
+    padding: .5em 0;
+    .view-details {
+      width: 75%;
+      padding: 0;
+      margin: 0 5% 0 0;
+      float: left;
+      a.btn {
+        width: 100%;
+        font-size: .8em;
+        box-sizing: border-box;
+      }
+    }
+    .icon {
+      width: 20%;
+      float: right;
+      a i {
+        font-size: 1.5em;
+        margin: 0;
+        padding: 0;
+        cursor: help;
+      }
+    }
+  }
+}
+
+.card-img {
+  width: 35%;
+  padding: 0;
+  margin: 0;
+  float: left;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.card-content {
+  width: 63%;
+  float: right;
+  clear: none;
+  margin-left: 2%;
+  margin-top: 0;
+  padding: 0;
+}
+
+@media (min-width: $screen-sm-min) {
+
+  .card-img {
+    width: 100%;
+    padding: 0;
+  }
+
+  .card-content {
+    clear: both;
+    width: 100%;
+    margin: 0;
+    min-height: 10em;
+  }
+}
+
+/* card-based results
+
+.card-btm {
+  padding: .25em 0;
+  width: 100%;
+}
+
+.card-btm a.btn {
+  font-size: .8em;
+  width: 100%;
+  white-space: normal;
+}
+
+.card-btm a i {
+  font-size: 1.5em;
+  float: right;
+}
+
+.card-text {
+  clear: left;
+  margin: 0;
+  min-height: 10em;
+}
+
+.card-content {
+  padding: .5em 0;
+  width: 100%;
+} */
+
+.psearch-control .btn {
+  font-size: .9em;
+}
+
+.psearch-switch-view {
+  font-size: .7em;
+  float: right;
+  border-color: #fff;
+  padding: .3em
+}
+
+// pagination buttons
+
+.psearch-pager-prev {
+  text-align: left;
+  font-size: .8em;
+  margin-top: 1em;
+}
+
+.psearch-pager-next {
+  text-align: right;
+  font-size: .8em;
+  margin-top: 1em;
+
+}
+
+.psearch-pager-viewall {
+  text-align: center;
+  font-size: .8em
+}
+
+// text 'flags' used for results
+.flag {
+  display: inline-block;
+  padding: 0 .5em;
+  font-size: 0.8em;
+  font-family: $title;
+  text-transform: uppercase;
+}
+
+.flag-warning {
+  background: $red;
+  color: $bg-color;
+}
+
+.flag-inactive {
+  background: $gray-mid;
+}
+
+.flag-info {
+  background: $green;
+  color: $bg-color;
+}
+
+@media (min-width: $screen-md-min) {
+
+  .custom-image img {
+    height: auto;
+    width: 100%;
+  }
+
+  .custom-cta .btn {
+    width: 100%;
+  }
+
+}
+
+// custom post navigation by dropdown
+
+.dropbtn {
+  padding: .25em;
+  cursor: pointer;
+}
+
+.cpt-dropdown {
+  font-size: .8em;
+  position: relative;
+  display: block;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.cpt-dropdown-content { // Dropdown Content (Hidden by Default)
+  position: absolute;
+  display: none;
+  min-width: 100px;
+  background-color: #7dafd3;
+}
+
+.cpt-dropdown-content a { // Links inside the dropdown
+  display: block;
+  padding: .5em;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+}
+
+.cpt-dropdown-content a:hover { // Change color of dropdown links on hover
+  color: #fff;
+  background-color: #428bca;
+}
+
+.cpt-dropdown:hover .cpt-dropdown-content { // Show the dropdown menu on hover
+  display: block;
+}
+
+.cpt-dropdown:hover .dropbtn { // Change the background color of the dropdown button when the dropdown content is shown
+  color: #fff;
+  background-color: #448cc0;
+}
+
+.wpcf-form-checkbox input {
+  display: inline-block
+}
+
+//override bootstrap css to have checks and labels appear next to each other

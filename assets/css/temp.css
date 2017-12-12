@@ -1,0 +1,66 @@
+
+
+body { padding-top: 0; }
+header { position-top: 0;
+display: block;}
+.dropable {
+    margin: 5px;
+    border: 1px solid #ccc;
+}
+
+header { margin: 0; position: relative;}
+
+h1 { font-size: 1.8em;}
+h2 { font-size: 1.5em;}
+h3 { font-size: 1.3em;}
+
+ul.drop-container { list-style-type: none; margin: 10px; padding: 5px; border: 1px solid #ccc; min-height: 50px;}
+ul#sub-fields { list-style-type: none; }
+ul#sm-caption li, ul#sub-fields li  { margin: 3px 3px 3px 0; padding: 3px; background-color: #c0c0c0; float: left; text-align: center; display: inline-block; }
+ul#sm-caption li { background-color: lightcoral}
+.log { display: block; border: 1px solid gray; min-height: 25px; margin: 10px; padding: 10px; font-family: monospace!important; font-size: 10px!important; background-color: lightgray;}
+
+.show {
+  display: block !important;
+}
+.hidden {
+  display: none !important;
+}
+.invisible {
+  visibility: hidden;
+}
+
+.checkbox-group label {
+padding: 0;
+margin: 0
+}
+
+.checkbox-group {
+    padding: .1em;
+    font-size: .7em;
+}
+
+.checkbox-group label input {
+    margin: 0 5px 0 0;
+}
+
+div#sub-filters {
+    margin: 0;
+}
+
+section { margin: 10px 0;}
+
+button { margin: 10px 0; display: block;
+ border: 1px solid #448cc0 !important;
+
+}
+
+div.form-group p.help-block { font-size: .7em; }
+div.form-group label { font-size: .9em;}
+div.server-response { border: 1px solid gray; min-height: 25px; margin: 2px; padding: 2px; font-size: .8em; background-color: lightgray}
+
+ul#nav-settings { float: right; list-style-type: none; }
+ul#nav-settings li { display: inline-block; padding: 0 0 0 10px;}
+nav h1 { float: left; }
+
+label.select-all { font-style: italic!important; }

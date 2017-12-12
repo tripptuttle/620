@@ -1,0 +1,271 @@
+// CSS below the main embark scheme elements needs to be cleaned up! it's functional but a hot mess. -Tripp 2017-03-15
+
+.embark {
+
+  $primary-color: #CC1C68;
+  $secondary-color: $blue-unc;
+  $tertiary-color: #9ACA3C;
+
+  .banner {
+    background-color: transparentize($secondary-color, .1);
+  }
+
+  .navbar-header {
+    background-color: $secondary-color;
+  }
+
+  .quote-icon,
+  .home-carousel .carousel-indicators .active,
+  .footer-social-icons a {
+    background-color: $primary-color;
+  }
+
+  .quote,
+  .green-top-border {
+    border-color: $primary-color;
+  }
+
+  .bg-green-light, .bg-blue {
+    background-color: $secondary-color !important;
+  }
+
+  .bg-yellow {
+    background-color: $red !important;
+  }
+
+  h1 {
+    color: $primary-color;
+  }
+
+  h2 {
+    color: $tertiary-color;
+  }
+
+  h3 {
+    color: $primary-color;
+  }
+
+  .white {
+    color: white;
+  }
+
+  .content-info a {
+    color: $secondary-color;
+  }
+
+  .ribbon {
+    display: none;
+  }
+
+  div.psearch-result.funding-finder {
+    padding-bottom: 2em;
+    p { line-height: 1.5}
+  }
+
+  // this CSS needs to be cleaned up badly! and restructured to be more efficient and utilize SASS
+
+  div.gg-main-nav {
+    margin: 0;
+    padding: 0;
+  }
+
+  .gg-main-nav div.col-md-4 {
+    padding: 0;
+    margin: 0;
+  }
+
+  a.gg-topic-block {
+    display: block;
+    padding: .5em;
+    margin: .25em .25em 0 0;
+    white-space: normal;
+  }
+
+  a.gg-topic-block:hover {
+  }
+
+  /* GG Child topics */
+
+  h3.gg-child-topic {
+    margin: 0;
+  }
+
+  .gg-child-topic p {
+    line-height: 1;
+    font-size: .9em;
+  }
+
+  .gg-resource-item {
+    color: $bg-color;
+    width: 100%;
+    margin: .5em 0;
+    padding: 0;
+    a {
+      font-weight: 400;
+      color: $bg-color;
+      &:hover {
+        text-decoration: underline;
+        color: $bg-color;
+      }
+    }
+  }
+
+  .gg-resource-text {
+    padding: .5em;
+  }
+
+  .gg-resource-item h3 {
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 400;
+    padding: 0;
+    margin: 0 0 .25em 0;
+  }
+
+  .gg-resource-text p {
+    font-size: .9em;
+    line-height: 1;
+    margin: .5em 0
+  }
+
+  div.gg-person {
+    background-color: $secondary-color;
+  }
+
+  h2.gg-person {
+    color: $blue-unc;
+  }
+
+  div.gg-question {
+    background-color: $blue;
+  }
+
+  h2.gg-question {
+    color: $blue;
+  }
+
+  div.gg-link {
+    background-color: darken($tertiary-color, 5%);
+  }
+
+  h2.gg-link {
+    color: darken($tertiary-color, 5%);
+  }
+
+  div.gg-video {
+    background-color: #CC1C68;
+  }
+
+  h2.gg-video {
+    color: #CC1C68;
+  }
+
+  .gg-link a {
+    color: #fff;
+  }
+
+  .gg-main-cat-topic-list li {
+    padding-right: 10px;
+  }
+  /*
+  GG Person Loop
+   */
+
+  .gg-person {
+    @include headings(1, 6) {
+      margin: 0;
+    }
+  }
+
+  p.gg-person-job-dept {
+    margin: 0;
+  }
+
+  .gg-person-img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .gg-person-img img {
+    width: 100%;
+  }
+
+  /*
+  GG Breadcrumds
+   */
+
+  .gg-nav {
+    margin: 1em 0 1em 0;
+    padding: 0;
+    height: auto;
+  }
+
+  .gg-body {
+    clear: both;
+    margin: .5em 0 0 0;
+  }
+
+  ul.gg-breadcrumb {
+    background-color: $bg-color !important;
+    font-family: $title;
+    font-weight: 600;
+    font-size: .8em;
+    margin: 0;
+    padding: 1em 0;
+    list-style: none;
+
+  }
+
+  ul.gg-breadcrumb li {
+    display: inline;
+    text-transform: uppercase;
+    background-color: $bg-color !important;
+    margin: 0;
+    padding: 0 !important;
+  }
+
+  li.gg-breadcrumb:before {
+    content: " > ";
+  }
+
+  .gg-main-cat-topic-list li {
+    padding-right: 10px;
+  }
+
+  /* GG Individual Topic
+
+   */
+
+  .gg-resource-container {
+    width: 100%;
+  }
+
+  .gg-resource-container h2 {
+    width: 100%;
+    margin: 1em 0 0 0;
+  }
+
+  .gg-resource-list {
+    width: 100%;
+    margin: 0;
+    padding: 0 .5em 0 0;
+    float: left;
+
+  }
+
+  @media screen and (min-width: 560px) {
+    .gg-resource-list {
+      width: 50%;
+    }
+  }
+
+  @media screen and (min-width: 920px) {
+    .gg-resource-list {
+      width: 50%;
+    }
+  }
+
+}

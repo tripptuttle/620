@@ -1,0 +1,45 @@
+// Fonts
+$sans: 'Source Sans Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+$serif: Georgia, 'Times New Roman', Times, serif;
+$title: 'Titillium Web', $sans;
+
+// Math
+$margin-small: 1em;
+$margin-medium: $margin-small * 2;
+$margin-large: $margin-small * 3;
+
+$padding-small: 1em;
+$padding-medium: $padding-small * 2;
+$padding-large: $padding-small * 3;
+
+$utility-bar-height: 30px;
+$navbar-height: 50px;
+
+// Colors
+$bg-color: #fff ;
+$body-bg: #fff;
+$text-color: #666969;
+$highlight-color: #e00011;
+$gray: #999;
+$gray-mid: #d8d8d8;
+$gray-light: #ededed;
+$gray-lighter: #f5f5f5;
+
+$yellow: #b2b42d;
+$yellow-light: #D5D640;
+$green-dark: #74a266;
+$green: #74a266;
+$green-light: #c7dac2;
+$blue: darken(#7dafd3, 15%);
+$blue-unc: #7dafd3;
+$red: #CC1E66;
+
+$link-color: $blue;
+
+// Media
+
+$screen-sm-min: 576px;
+$screen-md-min: 720px;
+$screen-lg-min: 960px;
+$screen-sm-max: 719px;
+$screen-md-max: 959px;

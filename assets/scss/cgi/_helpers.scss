@@ -1,0 +1,221 @@
+.hide {
+  @include hide;
+}
+
+.remove {
+  display: none;
+}
+
+.reset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.align-right {
+  float: right;
+  margin: 0 0 10px 10px;
+}
+
+.align-left {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-larger {
+  font-size: 1.2em;
+}
+
+.text-smaller {
+  font-size: 0.8em;
+}
+
+.text-caps {
+  text-transform: uppercase;
+}
+
+.sans {
+  font-family: $sans;
+}
+
+.serif {
+  font-family: $serif;
+}
+
+.title {
+  font-family: $title;
+}
+
+.pad-top {
+  padding-top: $padding-small;
+}
+
+.pad-top-extra {
+  padding-top: $padding-medium;
+}
+
+.pad-top-max {
+  padding-top: $padding-large;
+}
+
+.pad-bottom {
+  padding-bottom: $padding-small;
+}
+
+.pad-bottom-extra {
+  padding-bottom: $padding-medium;
+}
+
+.pad-bottom-max {
+  padding-bottom: $padding-large;
+}
+
+.pad-left {
+  padding-left: $padding-small;
+}
+
+.pad-left-extra {
+  padding-left: $padding-medium;
+}
+
+.pad-left-max {
+  padding-left: $padding-large;
+}
+
+.pad-right {
+  padding-right: $padding-small;
+}
+
+.pad-right-extra {
+  padding-right: $padding-medium;
+}
+
+.pad-right-max {
+  padding-right: $padding-large;
+}
+
+.margin-top {
+  margin-top: $margin-small;
+}
+
+.margin-top-extra {
+  margin-top: $margin-medium;
+}
+
+.margin-top-max {
+  margin-top: $margin-large;
+}
+
+.margin-bottom {
+  margin-bottom: $margin-small;
+}
+
+.margin-bottom-extra {
+  margin-bottom: $margin-medium;
+}
+
+.margin-bottom-max {
+  margin-bottom: $margin-large;
+}
+
+.margin-left {
+  margin-left: $margin-small;
+}
+
+.margin-left-extra {
+  margin-left: $margin-medium;
+}
+
+.margin-left-max {
+  margin-left: $margin-large;
+}
+
+.margin-right {
+  margin-right: $margin-small;
+}
+
+.margin-right-extra {
+  margin-right: $margin-medium;
+}
+
+.margin-right-max {
+  margin-right: $margin-large;
+}
+
+.ir {
+  @include ir;
+}
+
+.vertical-center {
+  @include vertical-center;
+}
+
+.relative {
+  position: relative;
+}
+
+.clear-both {
+  clear: both;
+}
+
+.clear-left {
+  clear: left;
+}
+
+.clear-right {
+  clear: right;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+.responsive-video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  iframe, object, embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.full-width {
+  width: 100%;
+}
+
+@media print {
+  .print-hide {
+    display: none;
+  }
+}

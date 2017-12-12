@@ -1,0 +1,65 @@
+#mc_embed_signup {
+  background: $bg-color;
+  clear: left;
+}
+
+#mc_embed_signup input.btn {
+  border: 2px solid;
+  margin: 1em 0;
+}
+
+#mc_embed_signup input {
+  border-radius: 0;
+}
+
+div.mc-field-group {
+  margin: 1em 0;
+}
+
+div.mc-field-group input {
+  border-radius: 0;
+  border: 1px solid $text-color;
+}
+
+div.mc-field-group.input-group input {
+}
+
+#mc_embed_signup input[type="checkbox"] {
+  padding-right: 10px;
+}
+
+#mc_embed_signup input[type="text"], #mc_embed_signup input[type="email"], #mc_embed_signup input[type="number"] {
+  display: block;
+  width: 100%
+}
+
+#mc_embed_signup form {
+  padding: 0
+}
+
+.mc-field-group {
+  width: 100%;
+}
+
+.mc-field-group ul li label {
+  font-weight: normal;
+  padding-left: .5em;
+}
+
+.campaign {
+  padding: 1em .5em;
+  font-family: $title;
+}
+
+.display_archive {
+  background-color: $gray-lighter;
+}
+
+.display_archive div:nth-of-type(odd) {
+  background-color: $gray-light;
+}
+
+.campaign a {
+  font-weight: 600;
+  font-family: $sans;
+}

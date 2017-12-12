@@ -1,0 +1,60 @@
+.navigators {
+
+  $primary-color: #CC66A6;
+  $primary-color-light: #EBC2DB;
+
+  .banner {
+    background-color: transparentize($primary-color, .1);
+  }
+
+  .quote-icon,
+  .home-carousel .carousel-indicators .active,
+  .footer-social-icons a,
+  .navbar-header {
+    background-color: $primary-color;
+  }
+
+  .quote,
+  .green-top-border {
+    border-color: $primary-color;
+  }
+
+  .bg-green-light {
+    background-color: $primary-color-light !important;
+  }
+
+  .bg-green {
+    background-color: $primary-color-light !important;
+  }
+
+  .bg-yellow {
+    background-color: $primary-color !important;
+  }
+
+  h1 {
+    color: $primary-color;
+  }
+
+  h2 {
+    color: $text-color;
+  }
+
+  h3 {
+    color: $primary-color;
+  }
+
+  .white {
+    color: white;
+  }
+
+  .ribbon {
+    display: none;
+  }
+
+  .psearch-result .card .cn img {
+    max-height: 200px;
+    max-width: 200px;
+    overflow: hidden;
+  }
+
+}

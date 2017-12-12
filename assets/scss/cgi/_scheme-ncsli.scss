@@ -1,0 +1,65 @@
+.ncsli {
+
+  $primary-color: #F7971E;
+  $secondary-color: #FFD200;
+  $secondary-color-darker: darken($secondary-color, 2%);
+
+  .banner {
+    background-color: transparentize($primary-color, .1);
+  }
+
+  .quote-icon,
+  .home-carousel .carousel-indicators .active,
+  .footer-social-icons a,
+  .navbar-header {
+    background-color: $primary-color;
+  }
+
+  .quote,
+  .green-top-border {
+    border-color: $primary-color;
+  }
+
+  .bg-green-light {
+    background-color: $secondary-color !important;
+  }
+
+  .bg-green {
+    background-color: $secondary-color !important;
+  }
+
+  .bg-yellow {
+    background-color: $primary-color !important;
+  }
+
+  .bg-blue {
+    background-color: $primary-color !important;
+  }
+
+  .sidebar-top-block {
+    border-color: $secondary-color !important;
+    background-color: lighten($secondary-color, 30%) !important;
+  }
+
+  h1 {
+    color: $secondary-color-darker;
+  }
+
+  h2 {
+    color: $primary-color;
+  }
+
+  h3 {
+    color: $secondary-color-darker;
+  }
+
+  .white {
+    color: white;
+  }
+
+  .ribbon {
+    background-image: url(../img/horizontal-stripe-ncsli@2x.png);
+    background-size: auto 80%;
+  }
+
+}
